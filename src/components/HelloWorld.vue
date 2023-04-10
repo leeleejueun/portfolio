@@ -372,7 +372,7 @@ export default {
       .menu{
         display: flex;
         justify-content: space-around;
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
         .subMenu{
           display: flex;
           .num{

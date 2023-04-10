@@ -5,26 +5,28 @@
         <p>WORKS</p>
         <p>2022 - 2023</p>
       </div>
+      <div class="image">
+        <img src="../assets/dplanex-main.png" />
+        <img src="../assets/travello-main.png" />
+        <img src="../assets/puppy-main.png" />
+        <img src="../assets/bbubbu-main.png" />
+      </div>
       <div class="menu">
         <div class="dplanex work">
-          <p>CLONE CODING / VANILLA JS</p>
-          <p>DPLANEX</p>
-          <img src="../assets/dplanex-main.png" />
+          <p class="detail">CLONE CODING / VANILLA JS</p>
+          <p class="title">DPLANEX</p>
         </div>
         <div class="travello work">
-          <p>UX DESIGN / UI DESIGN / VANILLA JAVASCRIPT</p>
-          <p>TRAVELLO</p>
-          <img src="../assets/travello-main.png" />
+          <p class="detail">UX DESIGN / UI DESIGN / VANILLA JAVASCRIPT</p>
+          <p class="title">TRAVELLO</p>
         </div>
         <div class="puppy work">  
-          <p>UX DESIGN / UI DESIGN / REACT</p>
-          <p>PUPPY</p>
-          <img src="../assets/puppy-main.png" />
+          <p class="detail">UX DESIGN / UI DESIGN / REACT</p>
+          <p class="title">PUPPY</p>
         </div>
         <div class="bbubbu work">
-          <p>UX DESIGN / UI DESIGN / NEXT JS</p>
-          <p>BBU BBU</p>
-          <img src="../assets/bbubbu-main.png" />
+          <p class="detail">UX DESIGN / UI DESIGN / NEXT JS</p>
+          <p class="title">BBU BBU</p>
         </div>
       </div>
     </div>
@@ -53,17 +55,33 @@ export default {
       font-family: 'Raleway', sans-serif;
       font-size: 1.25rem;
       }
-      .menu{
-        width: calc(100vw - 12.5rem);
-        margin: 0 auto;
+      .image{
         display: flex;
         justify-content: space-evenly;
+        img{
+            width: 18.75rem;
+          }
+      }
+      .menu{
+        width: 42.5rem;
+        margin: 0 auto;
+        display: flex;
+        transform: rotate(-90deg);
+        flex-direction: column;
+        align-items: flex-start;
         .work{
           p{
-            transform: rotate(-90deg);
+            // transform: rotate(-90deg);
           }
-          img{
-            width: 18.75rem;
+          .detail{
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.875rem;
+            margin-bottom: 2%;
+          }
+          .title{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 9.375rem;
+            margin-bottom: 20%;
           }
         }
       }
