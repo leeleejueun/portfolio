@@ -103,7 +103,7 @@
       <div class="main">
         <div class="top">
           <h2>GOOD TO SEE YOU!</h2>
-          <p class="scroll">SCROLL TO EXPLORE</p>
+          <router-link to="/about" @click="closeMenu"><p class="more">LEARN MORE</p></router-link>
         </div>
         <div class="middle">
           <img src="../assets/ju2018.png" />
@@ -117,7 +117,7 @@
     <div class="footer">
       <div class="back">
         <div class="menu">
-          <div class="sitemap">
+          <div class="siteMap subMenu">
             <p class="num">01/</p>
             <div class="menuContainer">
               <h3>SITEMAP</h3>
@@ -127,7 +127,7 @@
               <router-link to="/contact" @click="closeMenu">CONTACT</router-link>
             </div>
           </div>
-          <div class="socials">
+          <div class="socials subMenu">
             <p class="num">02/</p>
             <div class="menuContainer">
               <h3>SOCIALS</h3>
@@ -170,10 +170,10 @@ export default {
       width: calc(100% - 12.5rem);
       height: 100vh;
       color: #252C35;
-      padding-top: 9.375rem;
+      padding-top: 6.25rem;
       margin: 0 auto;
       h2{
-        font-size: 31.25rem;
+        font-size: 28.125rem;
         font-family: 'Bebas Neue', cursive;
       }
       .top{
@@ -323,7 +323,7 @@ export default {
     .main{
       width: calc(100% - 12.5rem);
       margin: 0 auto;
-      padding-top: 12.5rem;
+      padding-top: 6.25rem;
       font-family: 'Bebas Neue', cursive;
       font-size: 15.625rem;
       color: #252C35;
@@ -356,6 +356,7 @@ export default {
   .footer{
     width: 100vw;
     height: 100vh;
+    border: 1px solid red;
     position: relative;
     .back{
       position: absolute;
@@ -365,8 +366,65 @@ export default {
       height: calc(100% - 6.25rem);
       border-top-right-radius: 50px;
       border-top-left-radius: 50px;
-      color: white;
+      color: #fff;
       font-family: 'Raleway', sans-serif;
+      padding-top: 3.125rem;
+      .menu{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        .subMenu{
+          display: flex;
+          .num{
+            margin-right: 10%;
+            font-size: 1.25rem;
+          }
+          .menuContainer{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.875rem;
+            h3{
+              font-size: 1.875rem;
+              margin-bottom: 22%;
+            }
+            a{
+              font-size: 1.5625rem;
+              color: #fff;
+              margin-bottom: 18%;
+            }
+          }
+        }
+        .contact{
+          font-size: 1.875rem;
+          a{
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+      .leejueun{
+        max-width: 82rem;
+        margin: 0 auto;
+        position: relative;
+        p{
+          text-align: right;
+          transform: translate(-1rem, 2rem);
+        }
+        h2{
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25rem;
+          text-align: center;
+        }
+        .sidemenu{
+          display: flex;
+          justify-content: space-between;
+          font-size: 1.5625rem;
+          transform: translateY(-2rem);
+          a{
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }
