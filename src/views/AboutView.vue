@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="main">
+    <section class="main">
       <p>hello!</p>
       <p>I am Ju-eun, living in Korea</p>
       <img src="../assets/태극기.png" />
@@ -10,8 +10,8 @@
       <p>My goal is to be</p>
       <p>a designer and engineer</p>
       <p>who can contribute to others.</p>
-    </div>
-    <div class="skill">
+    </section>
+    <section class="skill">
       <h2>I USE THESE TOOLS TO WORK</h2>
       <div class="skills">
         <h3>#FRONT-END SKILL</h3>
@@ -60,6 +60,82 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    
   </div>
 </template>
+<script>
+export default {
+  
+}
+</script>
+<style scoped lang="scss">
+  .about{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    .main{
+      padding: 150px 100px;
+      font-size: 9.0625rem;
+      line-height: 1.25;
+      img{
+        display: inline;
+      }
+      :nth-child(2){
+        display: inline;
+      }
+    }
+    .skill{
+      background-color: #252C35;
+      padding: 150px 100px;
+      color: #fff;
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      h2{
+        width: 44rem;
+        font-size: 12rem;
+        margin-right: 4%;
+      }
+      .skills{
+        width: 1000px;
+        h3{
+          text-align: center;
+          width: 273px;
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.5625rem;
+          border: 1px solid white;
+          line-height: 2;
+          border-radius: 10px;
+          margin-bottom: 5%;
+        }
+        .content{
+          display: flex;
+          flex-wrap: wrap;
+          .detail{
+            display: flex;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 50px;
+            width: 450px;
+            margin-right: 3%;
+            margin-bottom: 3%;
+            img{
+              margin-right: 5%;
+            }
+            .text{
+              h4{
+                font-size: 30px;
+                margin-bottom: 3%;
+              }
+              p{
+                line-height: 1.5;
+                font-family: 'Raleway', sans-serif;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

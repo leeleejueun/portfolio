@@ -372,7 +372,7 @@ export default {
       .menu{
         display: flex;
         justify-content: space-around;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
         .subMenu{
           display: flex;
           .num{
@@ -408,12 +408,13 @@ export default {
         position: relative;
         p{
           text-align: right;
-          transform: translate(-1rem, 2rem);
+          transform: translate(-1rem, -1rem);
         }
         h2{
           font-family: 'Bebas Neue', cursive;
           font-size: 25rem;
           text-align: center;
+          line-height: 0.8;
         }
         .sidemenu{
           display: flex;
